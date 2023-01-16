@@ -1,3 +1,4 @@
+# generate a random dataset of size set_size with values ranging between biggest and smallest
 import random
 
 file = "data.csv"
