@@ -1,6 +1,7 @@
 # Own
 test.*
 *backup*
+backup_cool
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
