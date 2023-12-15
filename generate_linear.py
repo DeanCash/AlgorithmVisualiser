@@ -1,24 +1,15 @@
-# generate a dataset from smallest going up to biggest, linear
-
+# generate a shuffled dataset where every number is unique, linear
+import random
 file = "data.csv"
 
-biggest = 500
-smallest = 0
+biggest = 1000
+smallest = 1
 
-nums = []
+nums = [str(i) for i in range(smallest, biggest + 1)]
 
-string = []
-for i in range(biggest, smallest, -1):
-    string.append(str(i))
+random.shuffle(nums)
+
+dataset = ",".join(nums)
 
 with open(file, "w") as f:
-    f.write(",".join(string))
-
-
-
-
-
-
-
-
-
+    f.write(dataset)
